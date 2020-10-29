@@ -8,9 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedSiteId: String?
+    @StateObject var epaData = EPAData()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        if(selectedSiteId == nil) {
+            VStack {
+                Text("Select your nearest monitoring site").font(.headline)
+                List(epaData.sites, id: \.siteID) { site in
+                    Button(action: {
+                        withAnimation {
+                            selectedSiteId = site.siteID
+                        }
+                    }) {
+                        Text(site.siteName)
+                    }
+                }
+            }.padding().onAppear {
+                epaData.loadSitesList()
+            }
+        } else {
+            SelectedSiteView(selectedSiteId: $selectedSiteId, epaData: epaData).onAppear {
+                epaData.loadSiteData(siteId: selectedSiteId!)
+            }
+        }
     }
 }
 

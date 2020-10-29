@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0649D1D3254A9B7E000733CA /* SelectedSiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649D1D2254A9B7E000733CA /* SelectedSiteView.swift */; };
+		0649D1D7254AA381000733CA /* EPAData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0649D1D6254AA381000733CA /* EPAData.swift */; };
 		06E9ADCA254A978A00DA89B7 /* AirQualityWorkShopApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E9ADC9254A978A00DA89B7 /* AirQualityWorkShopApp.swift */; };
 		06E9ADCC254A978A00DA89B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E9ADCB254A978A00DA89B7 /* ContentView.swift */; };
 		06E9ADCE254A978F00DA89B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06E9ADCD254A978F00DA89B7 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0649D1D2254A9B7E000733CA /* SelectedSiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSiteView.swift; sourceTree = "<group>"; };
+		0649D1D6254AA381000733CA /* EPAData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPAData.swift; sourceTree = "<group>"; };
 		06E9ADC6254A978A00DA89B7 /* AirQualityWorkShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirQualityWorkShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06E9ADC9254A978A00DA89B7 /* AirQualityWorkShopApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityWorkShopApp.swift; sourceTree = "<group>"; };
 		06E9ADCB254A978A00DA89B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 			children = (
 				06E9ADC9254A978A00DA89B7 /* AirQualityWorkShopApp.swift */,
 				06E9ADCB254A978A00DA89B7 /* ContentView.swift */,
+				0649D1D2254A9B7E000733CA /* SelectedSiteView.swift */,
+				0649D1D6254AA381000733CA /* EPAData.swift */,
 				06E9ADCD254A978F00DA89B7 /* Assets.xcassets */,
 				06E9ADD2254A978F00DA89B7 /* Info.plist */,
 				06E9ADCF254A978F00DA89B7 /* Preview Content */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0649D1D7254AA381000733CA /* EPAData.swift in Sources */,
 				06E9ADCC254A978A00DA89B7 /* ContentView.swift in Sources */,
 				06E9ADCA254A978A00DA89B7 /* AirQualityWorkShopApp.swift in Sources */,
+				0649D1D3254A9B7E000733CA /* SelectedSiteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
